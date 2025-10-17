@@ -84,7 +84,7 @@ uv run python -c "from github_projects_mcp.github import GitHubProjectsClient; p
 ### Ошибки API:
 - Проверьте токен (не истёк ли?)
 - Проверьте права токена (repo + project)
-- Проверьте доступ к TestRepo
+- Проверьте доступ к your_repo_name
 
 ---
 
@@ -93,7 +93,7 @@ uv run python -c "from github_projects_mcp.github import GitHubProjectsClient; p
 После установки попробуйте:
 
 ```
-Get all open tickets from TestRepo
+Get all open tickets from your_repo_name
 Show me ticket #1
 Add comment "Testing" to ticket #1
 Show me all labels
@@ -108,7 +108,7 @@ Assign ticket #2 to myself
 
 **Текущее расположение:**
 ```
-C:\Projects\MCP\GithubProjects\github-projects-mcp
+/absolute/path/to/github-projects-mcp
 ```
 
 **Следующий шаг:** Откройте `.env` и добавьте ваш GitHub токен!

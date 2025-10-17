@@ -78,3 +78,4 @@ uv.lock.tmp
 # MCP specific
 *.mcp.log
 mcp_server.log
+.claude/

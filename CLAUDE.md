@@ -111,15 +111,15 @@ mcp dev src/github_projects_mcp/server.py
 Environment variables (set in `.env` or passed via Claude Code config):
 
 ```bash
-GITHUB_TOKEN=ghp_...           # Required: Personal Access Token (repo + project permissions)
-GITHUB_OWNER=artemfomin        # Required: Repository owner
-GITHUB_REPO=TestRepo           # Required: Repository name
-GITHUB_PROJECT_NUMBER=1        # Optional: Default project number
+GITHUB_TOKEN=ghp_...                      # Required: Personal Access Token (repo + project permissions)
+GITHUB_OWNER=your_github_username         # Required: Repository owner
+GITHUB_REPO=your_repo_name                # Required: Repository name
+GITHUB_PROJECT_NUMBER=1                   # Optional: Default project number
 ```
 
 ## Testing Against Real GitHub
 
-Tests use `https://github.com/artemfomin/TestRepo` - ensure `.env` has valid credentials before running tests.
+Tests use your configured GitHub repository - ensure `.env` has valid credentials before running tests.
 
 ## Adding a New Task Manager
 

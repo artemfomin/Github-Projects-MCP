@@ -2,7 +2,7 @@
 
 ## Текущий статус
 
-✅ Проект создан: `C:\Projects\MCP\GithubProjects\github-projects-mcp`
+✅ Проект создан: `/absolute/path/to/github-projects-mcp`
 ✅ Зависимости установлены
 ✅ Структура готова
 ⏳ Требуется: GitHub токен и настройка Claude Code
@@ -27,25 +27,25 @@
 
 ```bash
 # Windows
-notepad C:\Projects\MCP\GithubProjects\github-projects-mcp\.env
+notepad /absolute/path/to/github-projects-mcp\.env
 
 # Или в VS Code
-code C:\Projects\MCP\GithubProjects\github-projects-mcp\.env
+code /absolute/path/to/github-projects-mcp\.env
 ```
 
 Замените `your_token_here` на ваш токен:
 
 ```env
 GITHUB_TOKEN=ghp_ваш_настоящий_токен_здесь
-GITHUB_OWNER=artemfomin
-GITHUB_REPO=TestRepo
+GITHUB_OWNER=your_github_username
+GITHUB_REPO=your_repo_name
 GITHUB_PROJECT_NUMBER=1
 ```
 
 ### 1.3. Тестирование через MCP Inspector
 
 ```bash
-cd C:\Projects\MCP\GithubProjects\github-projects-mcp
+cd /absolute/path/to/github-projects-mcp
 mcp dev src/github_projects_mcp/server.py
 ```
 
@@ -139,8 +139,8 @@ dir %APPDATA%\Claude\claude_desktop_config.json
       ],
       "env": {
         "GITHUB_TOKEN": "ВАШ_ТОКЕН",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo",
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name",
         "GITHUB_PROJECT_NUMBER": "1"
       }
     }
@@ -203,7 +203,7 @@ List all MCP servers
 
 **1. Список тикетов:**
 ```
-Get all open tickets from TestRepo
+Get all open tickets from your_repo_name
 ```
 
 **2. Детали тикета:**
@@ -223,7 +223,7 @@ Add comment "Testing MCP integration from Claude Code" to ticket #1
 
 **5. Лейблы:**
 ```
-Show me all available labels in TestRepo
+Show me all available labels in your_repo_name
 ```
 
 **6. Назначить тикет:**
@@ -238,7 +238,7 @@ Close ticket #3
 
 **8. Майлстоуны:**
 ```
-Show me all milestones in TestRepo
+Show me all milestones in your_repo_name
 ```
 
 ---
@@ -249,7 +249,7 @@ Show me all milestones in TestRepo
 
 ```bash
 # Проверить .env
-cd C:\Projects\MCP\GithubProjects\github-projects-mcp
+cd /absolute/path/to/github-projects-mcp
 cat .env
 
 # Проверить зависимости
@@ -273,7 +273,7 @@ echo %GITHUB_TOKEN% # Windows
 2. **Проверить путь:**
    ```bash
    # Должна существовать директория
-   dir C:\Projects\MCP\GithubProjects\github-projects-mcp
+   dir /absolute/path/to/github-projects-mcp
    ```
 
 3. **Посмотреть логи Claude Code:**
@@ -292,7 +292,7 @@ echo %GITHUB_TOKEN% # Windows
    - Проверить права токена (repo, project)
 
 2. **"Ticket not found"**
-   - Убедитесь что тикет существует в TestRepo
+   - Убедитесь что тикет существует в your_repo_name
    - Проверьте GITHUB_OWNER и GITHUB_REPO
 
 3. **"GraphQL errors"**
@@ -319,11 +319,11 @@ echo %GITHUB_TOKEN% # Windows
 
 ```bash
 # 1. Настроить токен
-notepad C:\Projects\MCP\GithubProjects\github-projects-mcp\.env
+notepad /absolute/path/to/github-projects-mcp\.env
 # Вставить токен
 
 # 2. Тест локально
-cd C:\Projects\MCP\GithubProjects\github-projects-mcp
+cd /absolute/path/to/github-projects-mcp
 mcp dev src/github_projects_mcp/server.py
 
 # 3. Настроить Claude Code
@@ -340,7 +340,7 @@ notepad %APPDATA%\Claude\claude_desktop_config.json
 
 ## Полезные ссылки
 
-- 🔗 TestRepo: https://github.com/artemfomin/TestRepo
+- 🔗 your_repo_name: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
 - 🔗 GitHub Tokens: https://github.com/settings/tokens
 - 🔗 MCP Documentation: https://modelcontextprotocol.io/
 - 🔗 Claude Code: https://claude.ai/claude-code

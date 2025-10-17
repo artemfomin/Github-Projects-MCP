@@ -92,8 +92,8 @@ mcp dev src/github_projects_mcp/server.py
       ],
       "env": {
         "GITHUB_TOKEN": "ВАШ_ТОКЕН_ЗДЕСЬ",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo",
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name",
         "GITHUB_PROJECT_NUMBER": "1"
       }
     }
@@ -122,7 +122,7 @@ Show me available MCP tools for github-projects
 ## Тестовые команды:
 
 ```
-Get all open tickets from TestRepo
+Get all open tickets from your_repo_name
 Show me details of ticket #1
 Add comment "Testing MCP" to ticket #1
 Assign ticket #2 to myself
@@ -153,4 +153,4 @@ uv run python -c "from github_projects_mcp.github import GitHubProjectsClient; p
 ### Ошибки API
 - Проверить что токен валиден
 - Проверить права токена (repo, project)
-- Проверить что есть доступ к репозиторию artemfomin/TestRepo
+- Проверить что есть доступ к репозиторию your_github_username/your_repo_name

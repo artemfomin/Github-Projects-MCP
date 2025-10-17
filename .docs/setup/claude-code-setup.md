@@ -29,8 +29,8 @@ cp .env.example .env
 
 ```env
 GITHUB_TOKEN=ghp_your_token_here
-GITHUB_OWNER=artemfomin
-GITHUB_REPO=TestRepo
+GITHUB_OWNER=your_github_username
+GITHUB_REPO=your_repo_name
 GITHUB_PROJECT_NUMBER=1
 ```
 
@@ -83,8 +83,8 @@ uv run pytest -v
       ],
       "env": {
         "GITHUB_TOKEN": "ghp_your_token_here",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo",
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name",
         "GITHUB_PROJECT_NUMBER": "1"
       }
     }
@@ -117,8 +117,8 @@ uv run pytest -v
       ],
       "env": {
         "GITHUB_TOKEN": "ghp_your_token_here",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo",
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name",
         "GITHUB_PROJECT_NUMBER": "1"
       }
     }
@@ -142,8 +142,8 @@ uv run pytest -v
       "cwd": "C:\\Projects\\MCP\\GithubProjects\\github-projects-mcp\\src",
       "env": {
         "GITHUB_TOKEN": "ghp_your_token_here",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo",
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name",
         "GITHUB_PROJECT_NUMBER": "1"
       }
     }
@@ -189,7 +189,7 @@ Claude должен показать список из 15 инструменто
 #### 1. Получить список тикетов
 
 ```
-You: Get all open tickets from TestRepo
+You: Get all open tickets from your_repo_name
 ```
 
 #### 2. Получить конкретный тикет
@@ -223,7 +223,7 @@ You: Add label "bug" to ticket #3
 1. **Проверьте пути в конфигурации**
    ```bash
    # Проверьте что путь существует
-   ls "C:\Projects\MCP\GithubProjects\github-projects-mcp"
+   ls "/absolute/path/to/github-projects-mcp"
    ```
 
 2. **Проверьте переменные окружения**
@@ -281,8 +281,8 @@ You: Add label "bug" to ticket #3
       "args": ["--directory", "C:\\...\\github-projects-mcp", "run", "python", "-m", "github_projects_mcp.server"],
       "env": {
         "GITHUB_TOKEN": "ghp_token",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo"
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name"
       }
     },
     "github-projects-mainproject": {

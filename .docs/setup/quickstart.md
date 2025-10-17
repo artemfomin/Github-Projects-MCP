@@ -15,8 +15,8 @@ uv sync
 
 ```bash
 GITHUB_TOKEN=ghp_your_token_here
-GITHUB_OWNER=artemfomin
-GITHUB_REPO=TestRepo
+GITHUB_OWNER=your_github_username
+GITHUB_REPO=your_repo_name
 ```
 
 Получить токен: https://github.com/settings/tokens (права: `repo`, `project`)
@@ -50,8 +50,8 @@ mcp dev src/github_projects_mcp/server.py
       ],
       "env": {
         "GITHUB_TOKEN": "ghp_your_token",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo"
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name"
       }
     }
   }
@@ -117,11 +117,11 @@ GitHubProjectsClient (реализация)
 - ✅ 15 MCP tools для работы с тикетами
 - ✅ Абстрактный интерфейс для расширения
 - ✅ Полная типизация (Pydantic)
-- ✅ Тесты с использованием TestRepo
+- ✅ Тесты с использованием your_repo_name
 - ✅ Готовая интеграция с Claude Code
 
 ## 🔗 Ссылки
 
-- Тестовый репозиторий: https://github.com/artemfomin/TestRepo
+- Тестовый репозиторий: https://github.com/your_github_username/your_repo_name
 - MCP Documentation: https://modelcontextprotocol.io/
 - GitHub GraphQL API: https://docs.github.com/en/graphql

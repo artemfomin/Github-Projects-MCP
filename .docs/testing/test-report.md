@@ -1,7 +1,7 @@
 # Отчет о тестировании MCP GitHub Projects
 
 **Дата тестирования**: 2025-10-17
-**Репозиторий**: https://github.com/artemfomin/TestRepo
+**Репозиторий**: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
 **Версия**: После добавления create_ticket и create_subtask
 **Всего инструментов**: 17
 
@@ -25,7 +25,7 @@
 get_tickets(limit=10)
 ```
 
-**Результат**: Получено 7 тикетов из TestRepo
+**Результат**: Получено 7 тикетов из your_repo_name
 - #7: "Подзадача тестового тикета"
 - #6: "[TEST] Тестовый тикет для проверки MCP create_ticket"
 - #5-#2: Тестовые тикеты с emoji
@@ -36,7 +36,7 @@ get_tickets(limit=10)
 **Статус**: ✅ Успешно
 
 **Тест фильтров**:
-1. **По assignee**: `get_tickets(assignee="artemfomin")`
+1. **По assignee**: `get_tickets(assignee="your_github_username")`
    - Результат: 1 тикет (#1)
 
 2. **По label**: `get_tickets(label="enhancement")`
@@ -70,7 +70,7 @@ get_tickets(limit=10)
 **Тест**: `get_comments(ticket_id="1")`
 
 **Результат**: Получен 1 комментарий
-- Автор: @artemfomin
+- Автор: @your_github_username
 - Дата: 2025-10-17 17:26:03+00:00
 - Содержание: Тестовый комментарий с русским текстом, эмодзи и Markdown
 
@@ -88,7 +88,7 @@ add_comment(
 
 **Результат**:
 - Комментарий создан успешно
-- URL: https://github.com/artemfomin/TestRepo/issues/6#issuecomment-3416514020
+- URL: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/issues/6#issuecomment-3416514020
 - Русский язык и Markdown поддерживаются
 
 ### 6. Получение всех лейблов (get_labels)
@@ -142,8 +142,8 @@ add_comment(
 **Тест**: `assign_to_self(ticket_id="6")`
 
 **Результат**:
-- Тикет #6 назначен на artemfomin
-- Текущие assignees: artemfomin
+- Тикет #6 назначен на your_github_username
+- Текущие assignees: your_github_username
 
 ### 11. Привязка ветки (add_branch)
 
@@ -173,7 +173,7 @@ add_comment(
 
 **Результат**:
 - Получено 0 майлстоунов
-- В репозитории TestRepo пока не создано майлстоунов
+- В репозитории your_repo_name пока не создано майлстоунов
 
 ## Функции, добавленные в этой сессии
 

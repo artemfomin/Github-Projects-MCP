@@ -64,10 +64,10 @@ cp .env.example .env
 GITHUB_TOKEN=ghp_your_token_here
 
 # Владелец репозитория
-GITHUB_OWNER=artemfomin
+GITHUB_OWNER=my_username
 
 # Название репозитория
-GITHUB_REPO=TestRepo
+GITHUB_REPO=target_repo_name
 
 # Номер проекта (опционально)
 GITHUB_PROJECT_NUMBER=1
@@ -170,7 +170,7 @@ mcp dev src/github_projects_mcp/server.py
       "command": "uv",
       "args": [
         "--directory",
-        "C:\\Projects\\MCP\\GithubProjects\\github-projects-mcp",
+        "/absolute/path/to/github-projects-mcp",
         "run",
         "python",
         "-m",
@@ -178,8 +178,8 @@ mcp dev src/github_projects_mcp/server.py
       ],
       "env": {
         "GITHUB_TOKEN": "ghp_your_token_here",
-        "GITHUB_OWNER": "artemfomin",
-        "GITHUB_REPO": "TestRepo"
+        "GITHUB_OWNER": "your_github_username",
+        "GITHUB_REPO": "your_repo_name"
       }
     }
   }
@@ -198,7 +198,7 @@ Claude: [должен показать 15 инструментов github-projec
 ### Примеры использования
 
 ```
-You: Get all open tickets from TestRepo
+You: Get all open tickets from my repository
 Claude: [использует get_tickets tool]
 
 You: Add comment "Working on this" to ticket #5
@@ -212,13 +212,13 @@ Claude: [использует assign_to_self tool]
 
 ### Настройка тестов
 
-Тесты используют репозиторий https://github.com/artemfomin/TestRepo
+Тесты используют ваш настроенный GitHub репозиторий
 
 ```bash
 # Убедитесь что .env настроен правильно
 export GITHUB_TOKEN=your_token
-export GITHUB_OWNER=artemfomin
-export GITHUB_REPO=TestRepo
+export GITHUB_OWNER=your_github_username
+export GITHUB_REPO=your_repo_name
 ```
 
 ### Запуск тестов
