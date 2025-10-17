@@ -1,0 +1,43 @@
+[project]
+name = "github-projects-mcp"
+version = "0.1.0"
+description = "MCP server for GitHub Projects with extensible task manager interface"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+    "ruff>=0.3.0",
+    "pyright>=1.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+pythonVersion = "3.10"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

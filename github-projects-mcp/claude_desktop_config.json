@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "github-projects": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Projects\\MCP\\GithubProjects\\github-projects-mcp",
+        "run",
+        "python",
+        "-m",
+        "github_projects_mcp.server"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "your_token_here",
+        "GITHUB_OWNER": "artemfomin",
+        "GITHUB_REPO": "TestRepo",
+        "GITHUB_PROJECT_NUMBER": "1"
+      }
+    }
+  }
+}
